@@ -12,7 +12,6 @@ final class ApiAccessLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'api-access-livewire');
-        Livewire\Livewire::component('api-access-livewire-overview', Liberu\Foundation\ApiAccessLivewire\Livewire\Overview::class);
+        Livewire::component('api-access-livewire-overview', Liberu\Foundation\ApiAccessLivewire\Livewire\Overview::class);
     }
 }
-
